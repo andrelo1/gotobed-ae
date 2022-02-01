@@ -1,21 +1,14 @@
 #include "jc/jcinit.h"
 #include "gotobed/gotobedinit.h"
 
-namespace
+extern "C" DLLEXPORT bool SKSEPlugin_Query(const SKSE::QueryInterface* a_skse, SKSE::PluginInfo* a_info)
 {
-	constexpr SKSE::PluginVersionData GetPluginVersion()
-	{
-		SKSE::PluginVersionData version;
+	a_info->infoVersion = SKSE::PluginInfo::kVersion;
+	a_info->name = Version::PROJECT;
+	a_info->version = Version::MAJOR << 24 | Version::MINOR << 16 | Version::PATCH << 4;
 
-		version.PluginVersion({ Version::MAJOR, Version::MINOR, Version::PATCH, 0 });
-		version.PluginName(Version::PROJECT);
-		version.UsesAddressLibrary(true);
-
-		return version;
-	}
+	return true;
 }
-
-extern "C" DLLEXPORT SKSE::PluginVersionData SKSEPlugin_Version{ GetPluginVersion() };
 
 extern "C" DLLEXPORT bool SKSEAPI SKSEPlugin_Load(const SKSE::LoadInterface * a_skse)
 {
