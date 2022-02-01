@@ -36,13 +36,6 @@ namespace jc::api
 			return false;
 		}
 
-#ifdef JC_DOMAIN
-		if (!jc::domain::get(JC_DOMAIN)) {
-			spdlog::critical(FMT_STRING("domain \"{}\" doesn't exist"), JC_DOMAIN);
-			return false;
-		}
-#endif
-
 		obtain_func("solveFlt", "JDB", storage.JDB_solveFlt);
 		obtain_func("solveInt", "JDB", storage.JDB_solveInt);
 		obtain_func("solveStr", "JDB", storage.JDB_solveStr);
