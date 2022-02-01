@@ -193,7 +193,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>.\CommonLibSSE\build\Debug\CommonLibSSE.lib;.\CommonLibSSE\build\vcpkg_installed\x64-windows-static-md\debug\lib\spdlogd.lib;.\CommonLibSSE\build\vcpkg_installed\x64-windows-static-md\debug\lib\fmtd.lib;.\CommonLibSSE\build\vcpkg_installed\x64-windows-static-md\debug\lib\binary_iod.lib;.\Detours\lib.X64\detours.lib;Version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>.\CommonLibSSE\build\Debug\CommonLibSSE.lib;.\CommonLibSSE\build\vcpkg_installed\x64-windows-static-md\debug\lib\spdlogd.lib;.\CommonLibSSE\build\vcpkg_installed\x64-windows-static-md\debug\lib\fmtd.lib;.\Detours\lib.X64\detours.lib;Version.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -217,7 +217,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>.\CommonLibSSE\build\Release\CommonLibSSE.lib;.\CommonLibSSE\build\vcpkg_installed\x64-windows-static-md\lib\spdlog.lib;.\CommonLibSSE\build\vcpkg_installed\x64-windows-static-md\lib\fmt.lib;.\CommonLibSSE\build\vcpkg_installed\x64-windows-static-md\lib\binary_io.lib;.\Detours\lib.X64\detours.lib;Version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>.\CommonLibSSE\build\Release\CommonLibSSE.lib;.\CommonLibSSE\build\vcpkg_installed\x64-windows-static-md\lib\spdlog.lib;.\CommonLibSSE\build\vcpkg_installed\x64-windows-static-md\lib\fmt.lib;.\Detours\lib.X64\detours.lib;Version.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>
